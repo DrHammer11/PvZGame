@@ -70,7 +70,8 @@ function LoadGame() {
     document.body.appendChild(MessageContainer);
     Message = document.createElement("div");
     Message.className = "Message";
-    Message.style.width = "30%";
+    Message.style.width = "25%";
+    Message.style.height = "50%";
     MessageContainer.appendChild(Message);
     CloseButton = document.createElement("span");
     CloseButton.className= "close";
@@ -81,14 +82,17 @@ function LoadGame() {
     Message.appendChild(CloseButton);
     MessageHeader = document.createElement("p");
     MessageHeader.className = "MessageHeader";
-    MessageHeader.innerHTML = "Loading.. Please wait :trollface:";
+    MessageHeader.innerHTML = "Loading.. Please wait";
     Message.appendChild(MessageHeader);
+    TrollFace = document.createElement("img");
+    TrollFace.src = "trollface.png"
+    Message.appendChild(TrollFace)
     LoadingBar = document.createElement('progress');
     LoadingBar.max = "100"
     LoadingBar.value = 0
     Message.appendChild(LoadingBar)
     setInterval(function(){ 
-        if (Math.random() < LoadingBar.value/100) {
+        if (Math.random() < LoadingBar.value/70) {
             LoadingBar.value-=1;
         }
         else {
