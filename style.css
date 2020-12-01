@@ -1,3 +1,7 @@
+#EverythingFitter {
+  position:absolute;
+}
+
 #TitleContainer {
     position:absolute; 
     left:20%; 
@@ -5,13 +9,13 @@
 }
 
 #title {
-    font-size:50px;
+    font-size:3vw;
     font-family: 'Marker Felt'
 }
 
 #BonusText {
   position:absolute;
-  font-size:25px;
+  font-size:1.7vw;
   font-family: 'Marker Felt';
   top:25%;
   left:35%
@@ -20,15 +24,15 @@
 #VersionCount {
   position:absolute; 
   top:95%;
-  font-size:20px;
+  font-size:1.4vw;
   font-family: 'Marker Felt'
 }
 /* I copied all this code too*/
 .MessageContainer {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 6vw; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -42,18 +46,18 @@
 .Message {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 1.4vw;
     border: 1px solid #888;
     width: 80%;
   }
 
   .MessageText {
-    font-size:20px;
+    font-size:1.4vw;
     font-family: 'Marker Felt'
 }
 
 .MessageHeader {
-    font-size:35px;
+    font-size:2.2vw;
     font-family: 'Marker Felt'
 }
   
@@ -61,7 +65,7 @@
   .close {
     color: #aaaaaa;
     float: right;
-    font-size: 45px;
+    font-size: 2.8vw;
     font-weight: bold;
   }
   
@@ -76,16 +80,16 @@
     position:absolute; 
     left:45%; 
     top:50%;
-    width:120px;
-    height:30px;
+    width:7.3vw;
+    height:2vw;
     font-family: 'Marker Felt';
-    font-size: 20px;
+    font-size: 1.4vw;
   }
 
 #ArmorChomperRight {
     position:absolute; 
     width:auto;
-    height:500px;
+    height:68%;
     left:65%; 
     top:25%;
 }
@@ -93,14 +97,14 @@
 #ArmorChomperLeft {
     position:absolute; 
     width:auto;
-    height:500px;
+    height:68%;
     left:6%; 
     top:25%;
 }
 
 .MenuButton {
-  width:175px;
-  height:60px;
+  width:10.5vw;
+  height:3.4vw;
   font-family: 'Marker Felt';
-  font-size: 35px;
+  font-size: 2vw;
 }

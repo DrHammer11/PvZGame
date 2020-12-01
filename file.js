@@ -1,10 +1,20 @@
-//I copied all this code
+if (!(window.innerWidth/window.innerHeight === 1440/732)) {
+    var wc = document.getElementById("EverythingFitter")
+    if (window.innerWidth < 1440) {
+        wc.style.width = window.innerWidth
+        wc.style.height = (window.innerWidth/(1440/732)).toString()+"px"
+    }
+}
+var wc = document.getElementById("EverythingFitter")
+wc.style.width = window.innerWidth.toString()+"px";
+wc.style.height = (window.innerWidth/(1440/732)).toString()+"px";
 function ErrorMessage() {
+    wc = document.getElementById("EverythingFitter");
     MessageContainer = document.createElement("div");
+    wc.appendChild(MessageContainer);
     MessageContainer.className = "MessageContainer";
     MessageContainer.style.display = "block";
     MessageContainer.id = "ErrorMessage";
-    document.body.appendChild(MessageContainer);
     Message = document.createElement("div");
     Message.className = "Message";
     MessageContainer.appendChild(Message);
@@ -26,11 +36,12 @@ function ErrorMessage() {
 }
 
 function LoadMenu() {
+    wc = document.getElementById("EverythingFitter");
     MessageContainer = document.createElement("div");
+    wc.appendChild(MessageContainer);
     MessageContainer.className = "MessageContainer";
     MessageContainer.style.display = "block";
     MessageContainer.id = "LoadMenu";
-    document.body.appendChild(MessageContainer);
     Message = document.createElement("div");
     Message.className = "Message";
     Message.style.width = "30%";
@@ -63,15 +74,16 @@ function LoadMenu() {
 }
 
 function LoadGame() {
+    wc = document.getElementById("EverythingFitter");
     MessageContainer = document.createElement("div");
+    wc.appendChild(MessageContainer);
     MessageContainer.className = "MessageContainer";
     MessageContainer.style.display = "block";
     MessageContainer.id = "LoadGame";
-    document.body.appendChild(MessageContainer);
     Message = document.createElement("div");
     Message.className = "Message";
     Message.style.width = "25%";
-    Message.style.height = "55%";
+    //Message.style.height = "55%";
     MessageContainer.appendChild(Message);
     CloseButton = document.createElement("span");
     CloseButton.className= "close";
@@ -86,6 +98,7 @@ function LoadGame() {
     Message.appendChild(MessageHeader);
     TrollFace = document.createElement("img");
     TrollFace.src = "trollface.png"
+    TrollFace.style.position = "static";
     Message.appendChild(TrollFace)
     MessageText = document.createElement("p");
     MessageText.className = "MessageText";
@@ -109,3 +122,5 @@ function StartGame() {
     //ErrorMessage()
     LoadMenu()
 }
+
+
