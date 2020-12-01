@@ -9,7 +9,22 @@
     font-family: 'Marker Felt'
 }
 
-#MessageContainer {
+#BonusText {
+  position:absolute;
+  font-size:25px;
+  font-family: 'Marker Felt';
+  top:25%;
+  left:35%
+}
+
+#VersionCount {
+  position:absolute; 
+  top:95%;
+  font-size:20px;
+  font-family: 'Marker Felt'
+}
+/* I copied all this code too*/
+.MessageContainer {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -24,7 +39,7 @@
   }
   
   /* Modal Content */
-#Message {
+.Message {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -32,12 +47,12 @@
     width: 80%;
   }
 
-  #MessageText {
+  .MessageText {
     font-size:20px;
     font-family: 'Marker Felt'
 }
 
-#MessageHeader {
+.MessageHeader {
     font-size:35px;
     font-family: 'Marker Felt'
 }
@@ -46,7 +61,7 @@
   .close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 45px;
     font-weight: bold;
   }
   
@@ -67,14 +82,25 @@
     font-size: 20px;
   }
 
-#ArmourChomperRight {
+#ArmorChomperRight {
     position:absolute; 
+    width:auto;
+    height:500px;
     left:75%; 
     top:25%;
 }
 
-#ArmourChomperLeft {
+#ArmorChomperLeft {
     position:absolute; 
+    width:auto;
+    height:500px;
     left:6%; 
     top:25%;
+}
+
+.MenuButton {
+  width:175px;
+  height:60px;
+  font-family: 'Marker Felt';
+  font-size: 35px;
 }
